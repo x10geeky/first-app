@@ -1,8 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { WelcomeArrow } from './components/js/function';
+import { Avatar } from './components/js/avatar';
+import { CardA } from './components/ts/card';
+import { Test } from './test';
 
 function App() {
+  //
+  return <Test></Test>;
+  /*
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +26,7 @@ function App() {
       </header>
     </div>
   );
+  */
 }
 
 export default App;
