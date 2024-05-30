@@ -1,16 +1,13 @@
+import { BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
-import { Title } from './element/title';
-import { Toolbar } from './event/propagation';
-import { Gallery } from './state/gallery';
+import { AppRouters } from './router';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Title as="h1">Good Day</Title>
-        <Toolbar/>
-        <Gallery/>
-      </header>
+      <BrowserRouter>
+        <AppRouters />
+      </BrowserRouter>
     </div>
   );
 }
