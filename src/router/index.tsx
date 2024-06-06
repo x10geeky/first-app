@@ -8,6 +8,7 @@ import { Layout } from '../layouts';
 import { NotFoundPage } from '../pages/notfound';
 import LiftingPage from '../pages/lifting';
 import HookPage from '../pages/hook';
+import ReduxPage from '../pages/redux';
 
 export function AppRouters() {
   return (
@@ -26,6 +27,7 @@ export function AppRouters() {
         <Route path="/donotclick" element={<Navigate to="/" state={'From Do Not Click'} />} />
         <Route path="/lifting" element={<LiftingPage />} />
         <Route path="/hook" element={<HookPage />} />
+        <Route path="/redux" element={<ReduxPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
